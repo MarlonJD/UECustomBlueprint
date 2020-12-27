@@ -46,4 +46,7 @@ class MYPROJECT7_API UFrozenForestBlueprintFunctionLibrary : public UBlueprintFu
 
         UFUNCTION(BlueprintCallable, Category = "Frozen Forest")
         static void fMyHttpResponse(FString& response);
+
+        //UFUNCTION(BlueprintImplementableEvent)
+        //void MyResponseCame();
 };

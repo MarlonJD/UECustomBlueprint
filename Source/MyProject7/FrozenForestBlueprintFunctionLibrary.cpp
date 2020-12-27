@@ -2,6 +2,7 @@
 
 
 #include "FrozenForestBlueprintFunctionLibrary.h"
+#include <thread>
 
 
 struct A {
@@ -46,7 +47,7 @@ void UFrozenForestBlueprintFunctionLibrary::fMyHttpCall(const FString url, TEnum
 
 	Request->OnProcessRequestComplete().BindStatic([](FHttpRequestPtr HttpRequest, FHttpResponsePtr HttpResponse, bool bSucceeded)
 	{
-		//A::response0 = ->GetContentAsString();
+		A::response0 = HttpResponse->GetContentAsString();  
 	});
 
 	response = A::response0;
@@ -78,3 +79,7 @@ void UFrozenForestBlueprintFunctionLibrary::fMyHttpResponse(FString& response)
 {
 	response = A::response0;
 }
+
+//void UFrozenForestBlueprintFunctionLibrary::MyResponseCame()
+//{
+//}
