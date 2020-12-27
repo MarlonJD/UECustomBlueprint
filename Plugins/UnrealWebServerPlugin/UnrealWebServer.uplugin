@@ -1,0 +1,26 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.5",
+	"FriendlyName": "UnrealWebServer",
+	"Description": "UWS or Unreal Web Server is a web server for the Unreal Engine. Using UWS, we can expose functions of the Unreal Engine over the network in a RESTful way.",
+	"Category": "Networking",
+	"CreatedBy": "IsaraTech.",
+	"CreatedByURL": "http://www.isaratech.com",
+	"DocsURL": "http://www.isaratech.com/uws/doc",
+	"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/44361270bbdb4b9689c75595274c5e89",
+	"SupportURL": "http://www.isaratech.com/uws/support",
+	"EngineVersion": "4.25.0",
+	"CanContainContent": false,
+	"Installed": true,
+	"Modules": [
+		{
+			"Name": "UnrealWebServer",
+			"Type": "Runtime",
+			"LoadingPhase": "PreLoadingScreen",
+			"WhitelistPlatforms": [
+				"Win64"
+			]
+		}
+	]
+}
